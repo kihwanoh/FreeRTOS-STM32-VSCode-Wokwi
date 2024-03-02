@@ -26,6 +26,8 @@
 /* USER CODE BEGIN Includes */
 #include "stm32c0xx_nucleo.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /* USER CODE END Includes */
 
@@ -129,11 +131,15 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN defaultTask */
+  int i=0;
+  char buffer [33];
   /* Infinite loop */
   for(;;)
   {
     BSP_LED_Toggle(LED_GREEN);
-    printf("Hello FreeRTOS!\r\n");
+    itoa (i,buffer,10);
+    printf("Hello FreeRTOS! %s\r\n", buffer);
+    i++;
     osDelay(pdMS_TO_TICKS(1000));
   }
   /* USER CODE END defaultTask */

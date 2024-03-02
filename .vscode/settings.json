@@ -1,0 +1,10 @@
+{
+    "stm32-for-vscode.openOCDPath": false,
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\kihwa\\STM32CubeIDE\\workspace_1.14.1\\FreeRTOS-STM32-VSCode-Wokwi\\build",
+            "binaryPath": "c:\\Users\\kihwa\\STM32CubeIDE\\workspace_1.14.1\\FreeRTOS-STM32-VSCode-Wokwi\\build\\Nucleo-C031C6-FreeRTOS.elf",
+            "binaryArgs": []
+        }
+    ]
+}
